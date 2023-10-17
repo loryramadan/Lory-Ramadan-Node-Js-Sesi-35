@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "backend": "backend/index.js",
+            "use": "@vercel.node"
+        }
+    ], 
+    "routes": [
+        {
+            "backend": "/(.*)",
+            "dest": "backend/index.js"
+        }
+    ]
+}
